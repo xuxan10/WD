@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fancy Letter Head</title>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin-left:300px;
+  background: #ccc;
+}
+
+article {
+  width: 794px;
+  height: 642px;
+  margin-left:378px;
+  position: relative;
+}
+
+address {
+  position: absolute;
+  bottom:30.2px;
+  right: 75.59px;
+  text-shadow: 1px 1px 1px white;
+}
+
+h1 {
+  position: absolute;
+  top: 43.35px;
+  left:75.59px;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/* background images and border */
+
+article {
+margin: 0;
+
+/* fall-back for older browsers */
+background-image: url(../images/top-image.PNG);
+background-repeat: no-repeat;
+background-position: center 0;
+
+background: linear-gradient(to top, 
+rgba(0, 0, 0, 0.35), 
+rgba(0, 0, 0, 0.1) 20%, 
+rgba(0, 0, 0, 0.1) 80%,
+rgba(0, 0, 0, 0.35) 100%), 
+url(https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/top-image.png) 
+no-repeat center 0, 
+url(https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/bottom-image.png) no-repeat 0 100%;
+
+
+
+/* changes color to white for article element */
+background-color: #fff;
+
+
+/* top and bottom border, 3.77px both */
+border-top-style: solid;
+border-bottom-style: solid;
+border-color: rgba(255, 0, 0, 0.7);
+border-top-width:3.77px;
+border-bottom-width:3.77px;
+
+
+}
+
+/* logo h1 background image image */
+
+h1{
+background: url(https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/logo.png) no-repeat;
+filter: drop-shadow(2px 2px 1px black );
+}
+  </style>
+</head>
+<body>
+<article>
+      <h1>Awesome<br>Company</h1>
+      <address>
+        <p>The Awesome Company</p>
+        <p>102-112 Frail Bend Bridge<br>
+        The Dwindlings<br>
+        Little Hornet<br>
+        HX3 9ZQ<br>
+        UK</p>
+      </address>
+    </article>
+</body>
+</html>
+
